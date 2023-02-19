@@ -1,0 +1,16 @@
+
+<div>
+    <button
+        uploadButton
+        [uploadComplete]="onComplete"
+        [uploadOptions]="options"
+        [uploader]="uploader">
+        Upload Your Resume
+    </button>
+</div>
+
+<!-- <a href="{{ uploadedFileUrl }}" target="_blank">{{ uploadedFileUrl }}</a><br>
+-->
+<div *ngIf="successFileUpload">
+<h3>File Uploaded Successfully ...</h3>
+</div>
