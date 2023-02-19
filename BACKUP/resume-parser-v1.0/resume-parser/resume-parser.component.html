@@ -1,7 +1,28 @@
 
-<button (click)="thirdForm()">Third</button>
+<div>
+    <button
+        uploadButton
+        [uploadComplete]="onComplete"
+        [uploadOptions]="options"
+        [uploader]="uploader">
+        Upload Your Resume
+    </button>
+</div>
 
-<button (click)="loadResumeData()">Load Data to input fields.</button>
+<!-- <a href="{{ uploadedFileUrl }}" target="_blank">{{ uploadedFileUrl }}</a><br>
+-->
+<div *ngIf="successFileUpload">
+<h3>File Uploaded Successfully ...</h3>
+</div>
+
+<hr> 
+<h2>Part - 02</h2>
+<!-- <button (click)="onButtonClick()">Resume Parse</button> -->
+
+<hr>
+<h2>Part - 03</h2>
+
+<!-- <button (click)="loadResumeData()">Load Data to input fields.</button> -->
 
 <div>
     <form>
