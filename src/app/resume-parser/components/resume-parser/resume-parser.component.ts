@@ -42,7 +42,7 @@ onComplete = async (files: UploadWidgetResult[]) => {
   this.successFileUpload = true;
 
   const headers = new HttpHeaders({
-    'apikey': '5TNBZhDadTzG6sjOCUobFk8sed85Sk6b' //resumeparserAPI
+    'apikey': 'fl4X7Ni7ZRzdZM1Paoc5LqiF5EtEaxHt' //resumeparserAPI
   });
 
   try {
