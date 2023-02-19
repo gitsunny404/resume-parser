@@ -1,0 +1,70 @@
+
+<div>
+    <button
+        uploadButton
+        [uploadComplete]="onComplete"
+        [uploadOptions]="options"
+        [uploader]="uploader">
+        Upload Your Resume
+    </button>
+</div>
+
+<!-- <a href="{{ uploadedFileUrl }}" target="_blank">{{ uploadedFileUrl }}</a><br>
+-->
+<div *ngIf="successFileUpload">
+<h3>File Uploaded Successfully ...</h3>
+</div>
+
+<hr> 
+<!-- <button (click)="onButtonClick()">Resume Parse</button> -->
+
+<hr>
+<!-- <button (click)="loadResumeData()">Load Data to input fields.</button> -->
+
+<div>
+    <form>
+        <div>
+          <label>Name:</label>
+          <input type="text" name="name" [(ngModel)]="name">
+        </div>
+        <div>
+          <label>Email:</label>
+          <input type="email" name="email" [(ngModel)]="email">
+        </div>
+        <div>
+          <label>Phone:</label>
+          <input type="tel" name="phone" [(ngModel)]="phone">
+        </div>
+        <div>
+          <label>Education:</label>
+          <input type="text" name="education" [(ngModel)]="education">
+        </div>
+        <div>
+          <label>Skills:</label>
+          <textarea name="skills" [(ngModel)]="skills"></textarea>
+        </div>
+        <div>
+          <label>Address:</label>
+          <textarea name="address" [(ngModel)]="address"></textarea>
+        </div>
+        <div>
+          <label>GitHub:</label>
+          <input type="url" name="github" [(ngModel)]="github">
+        </div>
+        <div>
+          <label>LinkedIn:</label>
+          <input type="url" name="linkedin" [(ngModel)]="linkedin">
+        </div>
+        <div>
+          <label>Experience:</label>
+          <textarea name="experience" [(ngModel)]="experience"></textarea>
+        </div>
+        <div>
+            <label>Resume Link:</label>
+            <input name="resumeLink" [(ngModel)]="resumeLink">
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+      
+</div>
