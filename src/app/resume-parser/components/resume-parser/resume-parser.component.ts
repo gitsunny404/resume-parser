@@ -24,7 +24,7 @@ export class ResumeParserComponent {
 
   constructor(public http : HttpClient){}
   // Part - 01
-apiKeyPublic: string = "public_kW15b59D6Qf1fijp8S4EkesQdpY5"; //upload.io
+apiKeyPublic: string = "public_W142hpr5pwEfFeVWCWgSAQqrSTYk"; //upload.io
 uploader = Uploader({ apiKey: this.apiKeyPublic }); // Your real API key.
 
 options: UploadWidgetConfig = {
